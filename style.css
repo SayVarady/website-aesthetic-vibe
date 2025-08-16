@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #01284c, #8bc892);
+    color: #e0e6ed;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(1, 40, 75, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 1.5rem;
+    color: #f0f4f8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav li a:hover {
+    color: #8bc892;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f0f4f8;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #f0f4f8;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background: #8bc892;
+    font-weight: bold;
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #3baea0;
+    box-shadow: 0 5px 20px rgba(59, 174, 160, 0.5);
+}
+
+.gallery {
+    padding: 4rem 2rem;
+    background: #01284c;
+    text-align: center;
+}
+
+.gallery h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #3baea0;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    width: 250px;
+    height: 400px;
+    background: #01284c;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(59, 174, 160, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+footer {
+    background: rgba(1, 40, 75, 0.9);
+    color: #e0e6ed;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+}
+
+.petal {
+    position: fixed;
+    top: -10vh;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    opacity: 1;
+    animation: fall linear forwards;
+    box-shadow: 0 0 8px #3baea0;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) translateX(20px);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
